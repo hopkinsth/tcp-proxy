@@ -57,6 +57,7 @@ func proxy(reader net.Conn, writer net.Conn, errch chan<- error) {
 		fmt.Printf("%s: read %d bytes\n", pathStr, nr)
 		if err != nil {
 			fmt.Println(pathStr, ": error from read: ", err)
+			errch <- err
 			return
 		}
 
