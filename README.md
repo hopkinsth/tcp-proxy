@@ -1,3 +1,7 @@
-# proxy-test
+# tcp-proxy
 
-tcp proxying? something like that.
+provides super basic TCP proxying
+
+## options
+- `-listen` address to listen on
+- `-connect` address to connect to
